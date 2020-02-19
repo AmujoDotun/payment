@@ -12,6 +12,6 @@ class Album extends Model
   
     public function Photos(){
   
-      return $this->has_many('images');
+      return $this->hasMany('images');
     }
 }
