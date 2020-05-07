@@ -45,8 +45,6 @@
               <div class="thumbnail" style="min-height: 514px;">
                 <img alt="{{$album->name}}" src="/albums/{{$album->cover_image}}">
                 <div class="caption">
-                  <h3>{{$album->name}}</h3>
-                  <p>{{$album->description}}</p>
                   <p>{{count($album->Photos)}} image(s).</p>
                   <p>Created date:  {{ date("d F Y",strtotime($album->created_at)) }} at {{date("g:ha",strtotime($album->created_at)) }}</p>
                   <p><a href="{{URL::route('show_album',%20array('id'=>$album->id))}}" class="btn btn-big btn-default">Show Gallery</a></p>
